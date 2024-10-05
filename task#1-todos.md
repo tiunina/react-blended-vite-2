@@ -19,9 +19,8 @@ import { Text } from 'components';
 реалізуй додавання тудушки та відображення їх списку. Застосунок повинен
 зберігати тудушки між різними сесіями (оновлення сторінки).
 
-Використовуйте готову структуру форми з компонента `<Form/>`
-який приймає один проп `onSubmit` - функцію для передачі значення інпута під час
-сабміту форми.
+Використовуйте готову структуру форми з компонента `<Form/>` який приймає один
+проп `onSubmit` - функцію для передачі значення інпута під час сабміту форми.
 
 ```jsx
 <form className={style.form}>
@@ -48,7 +47,7 @@ import { Text } from 'components';
 
 Кожна todo повинна бути об'єктом з властивостями `text` та `id`. Для генерації
 ідентифікаторів використовуй будь-який відповідний пакет, наприклад
-[nanoid](https://www.npmjs.com/package/nanoid). Після завершення цього кроку,
+[nanoid](https://www.npmj`s.com/package/nanoid). Після завершення цього кроку,
 застосунок повинен виглядати приблизно так.
 
 [![preview](https://i.gyazo.com/de0115918db7d989fbdc10f1744c11c3.png)](https://gyazo.com/de0115918db7d989fbdc10f1744c11c3)
@@ -74,15 +73,15 @@ import { Text } from 'components';
 одного елемента списку потрбно використати універсальний компонент `<GridItem/>`
 
 ```jsx
-  <div className={style.box}>
-    <Text textAlign="center" marginBottom="20">
-      TODO #1
-    </Text>
-    <Text>Some description</Text>
-    <button className={style.deleteButton} type="button">
-      <RiDeleteBinLine size={24} />
-    </button>
-  </div>
+<div className={style.box}>
+  <Text textAlign="center" marginBottom="20">
+    TODO #1
+  </Text>
+  <Text>Some description</Text>
+  <button className={style.deleteButton} type="button">
+    <RiDeleteBinLine size={24} />
+  </button>
+</div>
 ```
 
 ## Крок 2
